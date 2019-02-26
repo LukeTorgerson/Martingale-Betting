@@ -46,9 +46,9 @@ int main()
 			{
 				win = true;
 				numWins = numWins + 1;
-				newMoney = money + ((bet * 2) * .95);
+				newMoney = money + (bet * .95);
 				bet = startBet;
-				cout << "win" << endl;
+				cout << "win ";
 			}
 			else
 			{
@@ -56,7 +56,7 @@ int main()
 				numLoss = numLoss + 1;
 				newMoney = money - bet;
 				bet = bet * 2;
-				cout << "lose" << endl;
+				cout << "lose ";
 			}
 
 			money = newMoney;
